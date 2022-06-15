@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,301 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+@font-face {
+  font-family: 'Monserrat-Light';
+  src: url('../public/fonts/Monserrat-Light/Montserrat-Light.eot'); /* IE9 Compat Modes */
+  src: url('../public/fonts/Monserrat-Light/Montserrat-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../public/fonts/Monserrat-Light/Montserrat-Light.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../public/fonts/Monserrat-Light/Montserrat-Light.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../public/fonts/Monserrat-Light/Montserrat-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../public/fonts/Monserrat-Light/Montserrat-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Monserrat-Regular';
+  src: url('../public/fonts/Monserrat-Regular/Montserrat-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../public/fonts/Monserrat-Regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../public/fonts/Monserrat-Regular/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../public/fonts/Monserrat-Regular/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../public/fonts/Monserrat-Regular/Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../public/fonts/Monserrat-Regular/Montserrat-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Monserrat-Medium';
+  src: url('../public/fonts/Monserrat-Medium/Montserrat-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../public/fonts/Monserrat-Medium/Montserrat-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../public/fonts/Monserrat-Medium/Montserrat-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../public/fonts/Monserrat-Medium/Montserrat-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../public/fonts/Monserrat-Medium/Montserrat-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../public/fonts/Monserrat-Medium/Montserrat-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body {
+  font: 16px 'Monserrat-Light', sans-serif;
+  color: #444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 840px;
+  margin: auto;
+}
+
+a {
+  color: #444;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.user-info {
+  /* background-color: #ededed; */
+  padding: 67px 0 46px;
+}
+
+.user-avatar {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.link {
+  font-family: 'Monserrat-Medium', sans-serif;
+}
+
+.main-title {
+  font: 24px 'Monserrat-Medium', sans-serif;
+}
+
+.main-text {
+  color: #999;
+  font: 16px/1.6 'Monserrat-Light', sans-serif;
+}
+
+/* Blog */
+
+.blog {
+  padding: 46px 0 76.5px;
+}
+
+.blog-title {
+  /* font: 24px 'Monserrat-Medium', sans-serif; */
+  margin-bottom: 15px;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-info {
+  width: 264px;
+  /* width: 33.3%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 429px;
+}
+
+.blog-info-title {
+  font: 16px 'Monserrat-Medium', sans-serif;
+}
+
+.blog-info-text {
+  font: 16px/1.6 'Monserrat-Light', sans-serif;
+  color: #999;
+}
+
+.blog-link {
+  font: 16px 'Monserrat-Medium', sans-serif;
+}
+
+.blog-link-light {
+  color: #999;
+}
+
+/* Concepts */
+
+.concepts {
+  padding: 76.5px 0 52px;
+}
+
+.concepts-title {
+  /* font: 24px 'Monserrat-Medium', sans-serif; */
+  margin-bottom: 3px;
+}
+
+.concepts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.concept-image {
+  margin: 12px 0 12px;
+}
+
+.experience-info {
+  padding: 64px 0 51px;
+}
+
+.footer-title {
+  /* font: 24px 'Monserrat-Medium', sans-serif; */
+  margin-bottom: 22px;
+}
+
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.experience {
+  width: 222px;
+  margin-bottom: 48px;
+}
+
+.experience:not(:nth-child(3n)) {
+  margin-right: 66px;
+}
+
+.experience p:first-child {
+  font: 16px/1.6 'Monserrat-Medium', sans-serif;
+  margin-bottom: 8px;
+  color: #666;
+}
+.experience p:nth-child(even) {
+  font: 16px/1.6 'Monserrat-Regular', sans-serif;
+  margin-bottom: 8px;
+  color: #666;
+}
+.experience p:last-child {
+  font: 14px/1.83 'Monserrat-Regular', sans-serif;
+  color: #999;
+}
+
+/* Form */
+
+.form-container {
+  padding: 51px 0 32px;
+}
+
+.details {
+  padding: 24px 24px 43px 24px;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+}
+
+.form-title {
+  /* font: 24px 'Monserrat-Medium', sans-serif; */
+  margin-bottom: 8px;
+}
+.form-subtitle {
+  font: 16px/1.6 'Monserrat-Light', sans-serif;
+  margin-bottom: 33px;
+  color: #999;
+}
+
+label {
+  font: 14px/1.22 'Monserrat-Regular', sans-serif;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.form-text {
+  padding: 12px 11px 11px 12px;
+  /* width: 792px; */
+  width: 100%;
+  height: 40px;
+  margin-bottom: 24px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+}
+.form-text::placeholder {
+  /* padding: 12px 11px 11px 12px; */
+  color: #E7E7E7;
+}
+
+.message-area {
+  /* width: 792px; */
+  width: 100%;
+  height: 81px;
+  padding-top: 12px;
+  padding-left: 12px;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  font: 16px/1.22 'Monserrat-Regular', sans-serif;
+  /* color: #E7E7E7; */
+}
+.message-area::placeholder {
+  color: #E7E7E7;
+}
+
+.button {
+  text-align: right;
+}
+.submit {
+  background-color: #F9F9F9;
+  border: 0;
+  font: 16px/1.22 'Monserrat-Medium', sans-serif;
+  text-decoration: underline;
+  text-align: right;
+}
+
+/* Footer links */
+
+.links-info {
+  padding: 32px 0 24px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link {
+  text-decoration: none;
+  font: 14px/1.22 'Monserrat-Light', sans-serif;
+  color: #999;
+  margin-right: 24px;
+}
+.footer-link2 {
+  margin-left: 24px;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+      width: auto;
+  }
+  .blog-info { 
+      flex: 100%;
+      justify-content: space-around;
+  }
+  img {
+      width: auto;
+      max-width: 100%;
+  }
+
+  .concept-image {
+      width: 100%;
+      justify-content: center;
+  }
+
+  .footer-link {
+      margin-right: 24px;
+  }
+  .footer-link2 {
+      margin-left: 24px;
   }
 }
