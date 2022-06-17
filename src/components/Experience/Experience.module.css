@@ -1,0 +1,14 @@
+.experience_info {
+    padding: 64px 0 51px;
+}
+  
+.footer_title {
+    /* font: 24px 'Monserrat-Medium', sans-serif; */
+    margin-bottom: 22px;
+}
+  
+.experience_container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}

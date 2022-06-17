@@ -1,0 +1,25 @@
+.concepts {
+    padding: 76.5px 0 52px;
+}
+  
+.concepts_title {
+    /* font: 24px 'Monserrat-Medium', sans-serif; */
+    margin-bottom: 3px;
+}
+
+.concepts_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.concept_image {
+    margin: 12px 0 12px; 
+}
+
+@media only screen and (max-width: 600px) {
+    .concept_image {
+        width: 100%;
+        justify-content: center;
+    }
+}

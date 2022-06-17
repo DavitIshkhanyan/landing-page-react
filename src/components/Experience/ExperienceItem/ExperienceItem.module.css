@@ -1,0 +1,23 @@
+.experience {
+    width: 222px;
+    margin-bottom: 48px;
+}
+  
+.experience:not(:nth-child(3n)) {
+    margin-right: 66px;
+}
+  
+.experience p:first-child {
+    font: 16px/1.6 'Monserrat-Medium', sans-serif;
+    margin-bottom: 8px;
+    color: #666;
+}
+.experience p:nth-child(even) {
+    font: 16px/1.6 'Monserrat-Regular', sans-serif;
+    margin-bottom: 8px;
+    color: #666;
+}
+.experience p:last-child {
+    font: 14px/1.83 'Monserrat-Regular', sans-serif;
+    color: #999;
+}

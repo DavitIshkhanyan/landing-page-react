@@ -1,11 +1,12 @@
-import BlogItem from "./BlogItem";
+import BlogItem from './BlogItem/BlogItem';
+import style from './Blog.module.css';
 
 const Blog = () => {
     return (
-        <div className="blog">
-            <div className="container">
-                <h2 className="blog-title main-title">Blog</h2>
-                <div className="article-container">
+        <div className={style.blog}>
+            <div className='container'>
+                <h2 className={`${style.blog_title} main-title`}>Blog</h2>
+                <div className={style.article_container}>
                     <BlogItem
                         src='images/blog-1.jpg' 
                         alt="Businesswise" 

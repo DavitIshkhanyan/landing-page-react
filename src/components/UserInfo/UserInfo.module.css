@@ -1,0 +1,15 @@
+.user_info {
+    /* background-color: #ededed; */
+    padding: 67px 0 46px;
+}
+
+.user_avatar {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.main_text {
+    color: #999;
+    font: 16px/1.6 'Monserrat-Light', sans-serif;
+}

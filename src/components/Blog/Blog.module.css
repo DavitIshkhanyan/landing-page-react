@@ -1,0 +1,14 @@
+.blog {
+    padding: 46px 0 76.5px;
+}
+  
+.blog_title {
+    /* font: 24px 'Monserrat-Medium', sans-serif; */
+    margin-bottom: 15px;
+}
+
+.article_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
