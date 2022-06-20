@@ -1,0 +1,64 @@
+.form_container {
+    padding: 51px 0 32px;
+}
+  
+.details {
+    padding: 24px 24px 43px 24px;
+    background-color: #F9F9F9;
+    border-radius: 4px;
+}
+  
+.form_title {
+    /* font: 24px 'Monserrat-Medium', sans-serif; */
+    margin-bottom: 8px;
+}
+.form_subtitle {
+    font: 16px/1.6 'Monserrat-Light', sans-serif;
+    margin-bottom: 33px;
+    color: #999;
+}
+
+label {
+    font: 14px/1.22 'Monserrat-Regular', sans-serif;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.form_text {
+    padding: 12px 11px 11px 12px;
+    /* width: 792px; */
+    width: 100%;
+    height: 40px;
+    margin-bottom: 24px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+}
+.form_text::placeholder {
+    /* padding: 12px 11px 11px 12px; */
+    color: #E7E7E7;
+}
+
+.message_area {
+    /* width: 792px; */
+    width: 100%;
+    height: 81px;
+    padding-top: 12px;
+    padding-left: 12px;
+    border: 1px solid #E7E7E7;
+    border-radius: 4px;
+    font: 16px/1.22 'Monserrat-Regular', sans-serif;
+    /* color: #E7E7E7; */
+}
+.message_area::placeholder {
+    color: #E7E7E7;
+}
+
+.button {
+    text-align: right;
+}
+.submit {
+    background-color: #F9F9F9;
+    border: 0;
+    font: 16px/1.22 'Monserrat-Medium', sans-serif;
+    text-decoration: underline;
+    text-align: right;
+}

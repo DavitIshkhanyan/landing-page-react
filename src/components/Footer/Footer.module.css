@@ -1,0 +1,27 @@
+.links_info {
+    padding: 32px 0 24px;
+}
+
+.footer_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_link {
+    text-decoration: none;
+    font: 14px/1.22 'Monserrat-Light', sans-serif;
+    color: #999;
+    margin-right: 24px;
+}
+.footer_link2 {
+    margin-left: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .footer_link {
+        margin-right: 24px;
+    }
+    .footer_link2 {
+        margin-left: 24px;
+    }
+}
