@@ -1,17 +1,16 @@
 import style from './Concepts.module.css';
 
 const Concepts = () => {
+    let imgs = [];
+    for (let i = 1; i < 7; i++) {
+        imgs.push(<img src={`images/work-${i}.jpg`} alt={`Concept ${i}`} className={style.concept_image} />);
+    }
     return (
         <div className={style.concepts}>
             <div className="container">
                 <h2 className={`${style.concepts_title} main-title`}>Some concept works</h2>
                 <div className={style.concepts_container}>
-                    <img src="images/work-1.jpg" alt="Concept 1" className={style.concept_image} />
-                    <img src="images/work-2.jpg" alt="Concept 2" className={style.concept_image} />
-                    <img src="images/work-3.jpg" alt="Concept 3" className={style.concept_image} />
-                    <img src="images/work-4.jpg" alt="Concept 4" className={style.concept_image} />
-                    <img src="images/work-5.jpg" alt="Concept 5" className={style.concept_image} />
-                    <img src="images/work-6.jpg" alt="Concept 6" className={style.concept_image} />
+                    {imgs}
                 </div>
             </div>
         </div>
